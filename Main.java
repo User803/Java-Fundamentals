@@ -1,3 +1,4 @@
+import java.awt.*;
 import java.util.Scanner;
 
 public class Main {
@@ -58,6 +59,7 @@ public class Main {
         int x2 = input.nextInt();
         int y2 = input.nextInt();
         input.close();
+
         System.out.println(pointDistanceSquared(x1, y1, x2, y2));
     }
 
@@ -83,6 +85,8 @@ public class Main {
     }
 
     static int pointDistanceSquared(int x1, int y1, int x2, int y2) {
-         return Math.powExact(x2 - x1, 2) + Math.powExact(y2 - y1, 2);
+        int dx = x2 - x1;
+        int dy = y2 - y1;
+        return dx * dx + dy * dy;
     }
 }
