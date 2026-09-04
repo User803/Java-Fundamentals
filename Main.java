@@ -11,10 +11,15 @@ public class Main {
 //        input.close();
 //        System.out.println(firstNum + secondNum);
 
+//        Scanner input = new Scanner(System.in);
+//        int width = input.nextInt();
+//        int height = input.nextInt();
+//        input.close();
+//        System.out.println(width * height);
+
         Scanner input = new Scanner(System.in);
-        int width = input.nextInt();
-        int height = input.nextInt();
+        String sentence = input.nextLine();
         input.close();
-        System.out.println(width * height);
+        System.out.println(sentence.toUpperCase());
     }
 }
