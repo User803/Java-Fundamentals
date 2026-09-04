@@ -5,10 +5,16 @@ public class Main {
         // Print the greeting below.
 //        System.out.println("Hello, Java!");
 
+//        Scanner input = new Scanner(System.in);
+//        int firstNum = input.nextInt();
+//        int secondNum = input.nextInt();
+//        input.close();
+//        System.out.println(firstNum + secondNum);
+
         Scanner input = new Scanner(System.in);
-        int firstNum = input.nextInt();
-        int secondNum = input.nextInt();
+        int width = input.nextInt();
+        int height = input.nextInt();
         input.close();
-        System.out.println(firstNum + secondNum);
+        System.out.println(width * height);
     }
 }
