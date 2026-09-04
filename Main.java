@@ -47,13 +47,21 @@ public class Main {
 //        input.close();
 //        System.out.println(sumUpto(number));
 
+//        Scanner input = new Scanner(System.in);
+//        int number = input.nextInt();
+//        input.close();
+//        System.out.println(square(number));
+
         Scanner input = new Scanner(System.in);
-        int number = input.nextInt();
+        int x1 = input.nextInt();
+        int y1 = input.nextInt();
+        int x2 = input.nextInt();
+        int y2 = input.nextInt();
         input.close();
-        System.out.println(square(number));
+        System.out.println(pointDistanceSquared(x1, y1, x2, y2));
     }
 
-    public static void fizzbuzz(int number){
+    static void fizzbuzz(int number){
         if (number % 15 == 0) {System.out.println("FizzBuzz");}
         else if (number % 3 == 0) {System.out.println("Fizz");}
         else if (number % 5 == 0) System.out.println("Buzz");
@@ -61,9 +69,8 @@ public class Main {
         else System.out.println(number);
     }
 
-    public static int sumUpto(int number){
+    static int sumUpto(int number){
         int sum = 0;
-
         for (int i = 1; i <= number; i++){
             sum += i;
         }
@@ -71,7 +78,11 @@ public class Main {
         return sum;
     }
 
-    public static int square(int n) {
+    static int square(int n) {
          return n * n;
+    }
+
+    static int pointDistanceSquared(int x1, int y1, int x2, int y2) {
+         return Math.powExact(x2 - x1, 2) + Math.powExact(y2 - y1, 2);
     }
 }
