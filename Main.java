@@ -37,10 +37,15 @@ public class Main {
 //        input.close();
 //        System.out.println("Hi, " + name + "! You are " + age + " years old.");
 
+//        Scanner input = new Scanner(System.in);
+//        int number = input.nextInt();
+//        input.close();
+//        fizzbuzz(number);
+
         Scanner input = new Scanner(System.in);
         int number = input.nextInt();
         input.close();
-        fizzbuzz(number);
+        System.out.println(sumUpto(number));
     }
 
     public static void fizzbuzz(int number){
@@ -49,5 +54,15 @@ public class Main {
         else if (number % 5 == 0) System.out.println("Buzz");
 
         else System.out.println(number);
+    }
+
+    public static int sumUpto(int number){
+        int sum = 0;
+
+        for (int i = 1; i <= number; i++){
+            sum += i;
+        }
+
+        return sum;
     }
 }
