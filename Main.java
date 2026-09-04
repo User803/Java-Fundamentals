@@ -42,10 +42,15 @@ public class Main {
 //        input.close();
 //        fizzbuzz(number);
 
+//        Scanner input = new Scanner(System.in);
+//        int number = input.nextInt();
+//        input.close();
+//        System.out.println(sumUpto(number));
+
         Scanner input = new Scanner(System.in);
         int number = input.nextInt();
         input.close();
-        System.out.println(sumUpto(number));
+        System.out.println(square(number));
     }
 
     public static void fizzbuzz(int number){
@@ -64,5 +69,9 @@ public class Main {
         }
 
         return sum;
+    }
+
+    public static int square(int n) {
+         return n * n;
     }
 }
